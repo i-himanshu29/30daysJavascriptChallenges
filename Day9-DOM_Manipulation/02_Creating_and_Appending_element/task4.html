@@ -1,0 +1,31 @@
+// Task4----------------
+// Create a new li element and add it to an existing ul list 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add li to ul</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <script>
+    // Create a new li element
+    const newItem = document.createElement("li");
+
+    // Add text content to the li
+    newItem.textContent = "Item 3";
+
+    // Select the ul element
+    const list = document.getElementById("myList");
+
+    // Append the new li to the ul
+    list.appendChild(newItem);
+  </script>
+</body>
+</html>

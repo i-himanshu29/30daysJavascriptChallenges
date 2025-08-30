@@ -1,0 +1,40 @@
+
+// Task10-----------------------
+// Add a mouseover event listener to an element that changes its border color 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouseover Event</title>
+  <style>
+    #box {
+      width: 150px;
+      height: 150px;
+      border: 3px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">Hover me!</div>
+
+  <script>
+    const box = document.getElementById("box");
+
+    // Mouseover event → change border color
+    box.addEventListener("mouseover", () => {
+      box.style.borderColor = "red";
+    });
+
+    // Mouseout event → reset border color
+    box.addEventListener("mouseout", () => {
+      box.style.borderColor = "black";
+    });
+  </script>
+</body>
+</html>

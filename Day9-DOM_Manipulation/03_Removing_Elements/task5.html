@@ -1,0 +1,23 @@
+// Task5------------------
+// Select an HTML element and remove it from the DOM 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove Element</title>
+</head>
+<body>
+  <h2 id="heading">This heading will be removed</h2>
+  <p>This paragraph will stay.</p>
+
+  <script>
+    // Select the element by its ID
+    const heading = document.getElementById("heading");
+
+    // Remove the element from the DOM
+    heading.remove();
+  </script>
+</body>
+</html>

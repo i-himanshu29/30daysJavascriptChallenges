@@ -1,0 +1,25 @@
+// Task7----------------------
+// Select an HTML element and change one of its attribute (e.g , src of an img tag). 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Attribute</title>
+</head>
+<body>
+  <img id="myImage" src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+  <script>
+    // Select the image element
+    const image = document.getElementById("myImage");
+
+    // Change its src attribute
+    image.setAttribute("src", "https://via.placeholder.com/250");
+
+    // (Optional) Change alt attribute too
+    image.setAttribute("alt", "New Placeholder Image");
+  </script>
+</body>
+</html>
